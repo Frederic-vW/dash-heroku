@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: |
-      git fetch --prune --unshallow
+        git fetch --prune --unshallow
     - name: Set up Python 3.6
       uses: actions/setup-python@v3
       with:

@@ -1,5 +1,4 @@
 # Morris-Lecar model
-
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 import numpy as np
@@ -144,6 +143,7 @@ df = pd.DataFrame({
 })
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     dcc.Graph(id='graph-with-slider'),
